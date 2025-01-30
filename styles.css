@@ -1,0 +1,96 @@
+body {
+    background-image: url('./src/imagem/planodefundo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #130425;
+    padding: 1rem 0;
+    text-align: center;
+    margin: 15px 0;
+    border: #130425;
+    border-radius: 20px;
+}
+
+h1 {
+    color: #2ca02c;
+}
+
+h2 {
+    color: #2ca02c;
+}
+
+h3{
+    color: #2ca02c;
+}
+
+.games-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.game-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+}
+
+.game-image {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+    border: 5px solid white;
+    border-radius: 200px;
+}
+
+.game-title {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: #2ca02c;
+}
+
+.game-description {
+    color: #ccc;
+}
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .page-title h1 {
+    animation: fadeInUp 1s ease-out forwards;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif; 
+    margin: 0;
+    font-size: 40px;
+}
+
+.page-title h2 {
+    animation: fadeInUp 1.5s ease-out forwards; 
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    font-size: 30px;
+}
